@@ -21,13 +21,8 @@ app.use(express.json());
 
 // email, subject, text
 app.post('/email', (req, res) => {
-  let subject= req.body.subject;
 
-  let email= req.body.email;
-
-  let text= req.body.textarea;
-
-    // const { subject, email, text } = req.body;
+    const { subject, email, text } = req.body;
     console.log('Data: ', req.body);
 
     sendMail(email, subject, text, function(err, data) {
