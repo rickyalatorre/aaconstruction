@@ -22,10 +22,10 @@ app.use(express.json());
 // email, subject, text
 app.post('/email', (req, res) => {
 
-    const { email, email, text } = req.body;
+    const { subject, email, text } = req.body;
     console.log('Data: ', req.body);
 
-    sendMail("domain@mail.aaconstruction77.com", subject, text, function(err, data) {
+    sendMail(email, subject, text, function(err, data) {
         if (err) {
             console.log('ERROR: ', err);
             return res.status(500).json({ message: err.message || 'Internal Error' });
