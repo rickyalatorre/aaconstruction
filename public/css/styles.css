@@ -1,15 +1,32 @@
 body {
   background-color: #eeeeee;
+  font-family: 'Prata', serif;
 }
 
-.color-padding-section {
-  background-color: #eeeeee;
-  padding: 7% 15%;
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+
+
+ .color-padding-section {
+  display:flex;
+  justify-content: space-evenly;
+  background-color: #05595B;
+  font-size: 50px;
+  height:auto;
+  padding-top:30px;
 }
 
 /* Nav Bar */
+
 .nav-back {
-  background-color: #062121;
+  background-color: #062C30;
   padding: 1rem 2rem;
 }
 
@@ -31,15 +48,7 @@ body {
   color: #eeeeee;
 }
 
-/* No Job too small */
-.njs-section {
-  background-image: url("https://cdn.pixabay.com/photo/2014/06/11/15/36/structure-366806_960_720.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #181810;
-  font-weight: bold;
-}
+
 
 .pic {
   text-align: center;
@@ -50,53 +59,100 @@ body {
   display: inline-block;
 }
 
-.adrian-crop {
-  border-radius: 50%;
-  display: inline-block;
+.adrian-hero-shot{
+  object-position: right bottom;
+  width:50%;
+  height:auto;
+  filter:brightness(90%) contrast(200%);
 }
 
-/* Skills */
-.skill-section {
-  padding: 7% 15%;
-  background-color: #062121;
-  color: #eeeeee;
+
+/* Services */
+.service-title{
+  background-color: #05595B;
+  text-align: center;
+  padding:50px 0 0 0;
+  color: #E2D784;
+  font-size: 40px;
+  font-weight: bold;
+  margin:0;
 }
 
-.skill-block {
-  width: 70%;
-  margin: 80px auto;
-  text-align: left;
+
+.wave{
+    background-color: #05595B;
+    height:40px;
+    position:relative;
+}
+.wave::before{
+  content:'';
+  display: block;
+  position:absolute;
+  top:-10px;
+  left:0;
+  width:55%;
+  height:15px;
+  /* #F5F5F5 */
+  background-color: yellow;
+  border-radius:50%;
 }
 
-.skill-image-left {
-  width: 25%;
-  float: left;
-  margin-right: 30px;
-  margin-bottom: 20px;
+.wave::after{
+  content:'';
+  display:block;
+  position:absolute;
+  top:-15px;
+  right:0;
+  width:50%;
+  height:25px;
+  /* #05595B */
+  background-color:pink ;
+  border-radius:50%;
 }
 
-.skill-image-right {
-  width: 25%;
-  float: right;
-  margin-left: 30px;
-  margin-bottom: 20px;
+.row{
+  background-color: #05595B;
+}
+.service-align{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding:2rem;
+  opacity:0;
+  color:#F5F5F5;
+  }
+
+
+.contact-section{
+  color:#062C30;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
-.skill-text-left {
-  clear: left;
+/* .contact-background-drill{
+  margin:0 auto;
+  opacity:0.33;
+  background-image:url("../images/drill.png");
+  width:800px;
+  height:800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+.phone-email-container{
+  padding:20px;
 }
-
-.skill-text-right {
-  text-align: right;
-  clear: right;
+.temp{
+  width:400px;
+  margin:0 auto;
+}
+.contact-drill{
+  width:60px;
+  padding-top:10px;
 }
 
 .head-right {
   text-align: right;
-}
-
-.h2-skill {
-  padding-bottom: 25px;
 }
 
 hr {
@@ -105,25 +161,110 @@ hr {
   border-style: dashed none none;
 }
 
-/* Slides */
-.slide-section {
-  background-color: #062121;
-  padding: 7% 15%;
+/* Image GALLERY */
+.space-evenly-w-flex{
+  display:flex;
+  justify-content: space-evenly;
+  background-color: #F5F5F5;
 }
 
-.image-size {
-  width: 100%;
-  height: 40%;
+.row{
+  margin-left: 0;
+  margin-right:0;
+
 }
+
+.gallery-img{
+  width:80%;
+  height:100%;
+  padding:15px 0 15px 0;
+  }
 
 /* Contact */
-.contact-section {
-  background-image: url(" https://cdn.pixabay.com/photo/2018/10/27/06/10/wood-3775893_960_720.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #0e2431;
-  font-weight: bolder;
+
+
+/* About Page  */
+.about-page-image{
+  border-radius: 10px;
+  width:420px;
+  height:500px;
+}
+.about-page-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  padding: 50px 0;
+}
+.about-us{
+  font-size: 20px;
+  font-weight:bold;
+  width:50%;
+}
+.contact-today{
+  font-size: 40px;
+  padding-top: 20px;
+  margin:0;
+}
+/* estimate title*/
+@media only screen and (min-width:500px){
+  .navbar-brand{
+    font-size: 1.5rem;
+  }
+  .slog{
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 700px){
+
+  .contact-drill{
+    width:100px;
+    padding-top:10px;
+  }
+
+.adrian-hero-shot{
+  border-radius: 60% 5% 24% 5%;
+}
+
+  .service-title{
+    background-color: #05595B;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin:0;
+  }
+
+.num-email{
+  font-size: 26px;
+  padding-bottom:20px;
+}
+
+.feel-free{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.estimate-title{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.emailIcon{
+display:inline-block;
+font-size: 100%;
+}
+}
+.emailIcon{
+display:inline-block;
+}
+
+
+.contact-section{
+  background-color: #E2D784;
+  position:relative;
+  height:500px;
 }
 
 .text-center {
@@ -139,16 +280,9 @@ input {
   width: 50%;
 }
 
-.free {
-  color: red;
-  font-size: 3rem;
-}
-
 .cellphone {
-  text-align: center;
-  font-size: 1.5rem;
-  background: rgba(255, 255, 255, 0.3);
-  /* padding: 30px; */
+  width:50%;
+  margin:0 auto;
 }
 
 .inBlock {
@@ -170,27 +304,220 @@ input {
 }
 
 footer {
-  padding: 2% 0;
-  background-color: #181810;
+  padding: 30px 0;
+  background-color: #062C30;
   color: #eeeeee;
   text-align: center;
 }
 
+.skill-box{
+  width:200px;
+  height: 200px;
+  background-color: grey;
+}
+
+
+/* slogan big screen animation */
+.slog{
+  font-size:40px;
+  text-align: left;
+  color:#F5F5F5;
+  ;
+
+}
+.slog.active{
+  animation-name: slogan;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slogan{
+from {margin-top:0}
+to {margin-top:15%}
+}
+
+/* fade-in animation */
+
+.service-align.active{
+  opacity: 0;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Modal Css */
+
+.eLabel{
+  font-size: 1.1rem;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  animation-name: imageAni;
+  animation-duration: 0.6s;
+}
+
+@keyframes imageAni {
+  from{transform:scale(0);}
+  to{transform:scale(1);}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.zig {
+  background: linear-gradient(#e2d784 0 0) top/100% calc(100% - 28px) no-repeat,
+    conic-gradient(
+        from -70deg at bottom,
+        #e2d784,
+        #e2d784 1deg 139deg,
+        #062c30 140deg
+      )
+      bottom/153.86px 28px repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+
 /* responsive  */
-@media (max-width: 500px) {
+
+@media only screen and (max-width: 700px) {
+
+.temp{
+  width:80%;
+  margin:0 auto;
+}
+
+.nav-link{
+  font-size: 1rem;
+}
+
+
+  .service-title{
+    background-color: #05595B;
+    text-align: right;
+    padding:50px 20px 0 0;
+    color: #E2D784;
+    font-size: 26px;
+    font-weight: bold;
+    margin:0;
+  }
+
+   .num-email{
+    font-size: 16px;
+    padding-bottom:20px;
+  }
+
+
+  .feel-free{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .estimate-title{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+
+  .contact-section{
+      height:400px;
+  }
+
+
+.modal-content{
+  width:100%
+}
+
+  .gallery-img{
+    width:100%;
+  }
+
+.cellphone{
+  width:100%;
+  padding:20px;
+}
+
+.adrian-hero-shot{
+  height:auto;
+  width:100%;
+  filter: brightness(50%);
+}
 
   .navbar-brand {
-    font-size: 1.3rem;
+    font-size: 0.95rem;
   }
 
   .link-font {
     font-size: 1.2rem;
   }
 
-  .color-padding-section {
-    background-color: #eeeeee;
-    padding: 7%;
+
+  .slog{
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    text-align: left;
+    color:#F5F5F5;
+    z-index: 1;
+
   }
+  .slog.active{
+    animation-name: slogan;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slogan{
+  from {left:0}
+  to {left:25px}
+  }
+
+  .color-padding-section {
+    position:relative;
+    height:auto;
+    padding:0;
+  }
+
+.service-align{
+  opacity:0;
+  color:#F5F5F5;
+}
 
   textarea {
     width: 100%;
@@ -204,8 +531,41 @@ footer {
   .slide-section {
     padding: 0;
   }
+
+  .about-page-image{
+    width:90%;
+    height:auto;
+  }
+  .about-page-container{
+    padding: 20px 0;
+  }
+  .about-us{
+    font-size: 12px;
+    width:90%;
+    line-height: 1.5;
+  }
+  .contact-today{
+    font-size: 20px;
+  }
+}
+/* end of small screen */
+/* extra small */
+@media only screen and (max-width:300px){
+
+.temp{
+  padding-top:10px;
 }
 
-.eLabel{
-  font-size: 1.1rem;
+a.padleft{
+  font-size:12px;
+}
+.phone-email-container{
+  padding:0;
+}
+  .contact-section{
+    height:450px;
+  }
+  .navbar-toggler{
+    font-size:0.9rem;
+  }
 }
