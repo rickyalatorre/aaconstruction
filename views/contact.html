@@ -1,78 +1,120 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Ubuntu+Mono&display=swap" rel="stylesheet">
 
-      <!-- Bootstrap Stylessheet -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-      <!-- Font Awesome -->
-      <script src="https://kit.fontawesome.com/e75f0a9b44.js" crossorigin="anonymous"></script>
-      <!-- Bootstrap Js -->
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-      <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-      <script defer type="text/javascript" src="./SwupScript.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
 
-      <!-- swup scroll  -->
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Ubuntu+Mono&display=swap" rel="stylesheet">
 
-      <!-- CSS folder Stylesheet -->
-      <link rel="stylesheet" href="/css/styles.css">
+  <!-- Bootstrap Stylessheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/e75f0a9b44.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap Js -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- emailJs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-  </head>
-  <body>
+  <!-- CSS folder Stylesheet -->
+  <link rel="stylesheet" href="/css/styles.css">
 
-    <nav class="navbar navbar-expand-lg navbar-dark nav-back">
-       <a class="navbar-brand light-color" href="index.html">AA Construction <i class="fas fa-hammer"></i></a>
+</head>
 
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="navbar-collapse collapse" id="navbarNav">
-         <ul class="navbar-nav ml-auto">
-           <li class="nav-item ">
-             <a class="nav-link" href="/index.html" data-toggle="collapse" data-target=".navbar-collapse.show">Home</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="/about.html" data-toggle="collapse" data-target=".navbar-collapse.show">About Us</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="/contact.html" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
-           </li>
-           </li>
-         </ul>
-       </div>
-     </nav>
+<body>
 
-<main id='swup' class='transition-fade'>
- <div style='display:flex;justify-content:center;align-items: center;flex-direction:column;'>
-  <p class='contact-today'>
-  Get a free quote today!
-  </p>
-  <img class='contact-drill' src='../images/drill.png' />
- </div>
-    <div class='phone-email-container'>
-      <div class='temp'>
-        <div class='num-email'>
-          <i class="fa-solid fa-phone"></i><a class='padleft' href="tel:562-972-7680">562-972-7680</a>
-        </div>
-        <div class='num-email'>
-          <i class="far fa-envelope"></i><a class="emailIcon padleft"   href="mailto:alatorre1160@yahoo.com">alatorre1160@yahoo.com</a>
-        </div>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-dark nav-back">
+    <a class="navbar-brand light-color" href="index.html">AA Construction <i class="fas fa-hammer"></i></a>
 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div style='display:flex;justify-content:center;align-items: center;flex-direction:column;'>
+    <p class='contact-today'>
+      Get a free quote today!
+    </p>
+    <img class='contact-drill' src='../images/drill.png' alt='construction drill logo' />
+  </div>
+
+
+  <form id="contact-form" class='container' style='margin:40px 0;'>
+    <div class='contact-num-container'>
+        <i class="fa-solid fa-phone"></i><a class='padleft' style='font-size:20px;' href="tel:562-972-7680">562-972-7680</a>
     </div>
 
+    <p style='font-size:20px;'><i class="far fa-envelope"></i> Send us an email</p>
 
-    </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <input type="hidden" name="contact_number">
+    <div class="form-group">
+      <label>Name</label>
+      <input class='form-control name' type="text" name="user_name">
+    </div>
+
+    <div class="form-group">
+      <label>Email</label>
+      <input class='form-control email' type="email" name="user_email">
+    </div>
+
+    <div class="form-group">
+      <label>Message</label>
+      <textarea class='form-control message' name="message"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+
+  <a class='target-href' href='success.html'></a>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init("VJFBPJzJUaFVdC4HU");
+    })();
+  </script>
 
 
-  </body>
+  <script type="text/javascript">
+    window.onload = function() {
+      console.log('window.onload triggered');
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+        emailjs.sendForm('contact_service', 'contact_form', this)
+          .then(function() {
+            console.log('email sent!');
+            let targetHref = document.querySelector('.target-href');
+
+            targetHref.click();
+          }, function(error) {
+            console.log('fail to send email', error);
+          });
+      });
+    }
+  </script>
+</body>
+
 </html>

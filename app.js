@@ -3,7 +3,6 @@
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
-const sendMail = require('./mail');
 const app = express();
 
 

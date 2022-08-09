@@ -3,16 +3,36 @@ body {
   font-family: 'Prata', serif;
 }
 
-.transition-fade {
-  transition: 0.4s;
-  opacity: 1;
+.green{
+  color:green;
+}
+.email-sent{
+  padding-top:40px;
+  text-align: center;
+  font-size:3.5rem;
 }
 
-html.is-animating .transition-fade {
-  opacity: 0;
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #062C30;
 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #E2D784;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F5F5F5;
+}
 
  .color-padding-section {
   display:flex;
@@ -48,8 +68,6 @@ html.is-animating .transition-fade {
   color: #eeeeee;
 }
 
-
-
 .pic {
   text-align: center;
 }
@@ -84,31 +102,7 @@ html.is-animating .transition-fade {
     height:40px;
     position:relative;
 }
-.wave::before{
-  content:'';
-  display: block;
-  position:absolute;
-  top:-10px;
-  left:0;
-  width:55%;
-  height:15px;
-  /* #F5F5F5 */
-  background-color: yellow;
-  border-radius:50%;
-}
 
-.wave::after{
-  content:'';
-  display:block;
-  position:absolute;
-  top:-15px;
-  right:0;
-  width:50%;
-  height:25px;
-  /* #05595B */
-  background-color:pink ;
-  border-radius:50%;
-}
 
 .row{
   background-color: #05595B;
@@ -129,22 +123,11 @@ html.is-animating .transition-fade {
   font-family: 'Ubuntu Mono', monospace;
 }
 
-/* .contact-background-drill{
-  margin:0 auto;
-  opacity:0.33;
-  background-image:url("../images/drill.png");
-  width:800px;
-  height:800px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-} */
-.phone-email-container{
-  padding:20px;
-}
-.temp{
+
+.contact-num-container{
   width:400px;
-  margin:0 auto;
+  /* margin:0 auto; */
+  padding-bottom: 30px;
 }
 .contact-drill{
   width:60px;
@@ -298,10 +281,6 @@ input {
   width: 100px;
 }
 
-.contact-span {
-  color: darkblue;
-  font-size: 2rem;
-}
 
 footer {
   padding: 30px 0;
@@ -418,9 +397,15 @@ to {margin-top:15%}
 
 @media only screen and (max-width: 700px) {
 
-.temp{
+  .email-sent{
+    font-size:2.0rem;
+  }
+
+.contact-num-container{
   width:80%;
-  margin:0 auto;
+  /* margin:0 auto; */
+  padding-bottom: 30px;
+
 }
 
 .nav-link{
@@ -430,7 +415,7 @@ to {margin-top:15%}
 
   .service-title{
     background-color: #05595B;
-    text-align: right;
+    text-align: center;
     padding:50px 20px 0 0;
     color: #E2D784;
     font-size: 26px;
@@ -504,8 +489,8 @@ to {margin-top:15%}
   }
 
   @keyframes slogan{
-  from {left:0}
-  to {left:25px}
+  from {left:0;}
+  to {left:25px;}
   }
 
   .color-padding-section {
@@ -540,12 +525,12 @@ to {margin-top:15%}
     padding: 20px 0;
   }
   .about-us{
-    font-size: 12px;
+    font-size: 15px;
     width:90%;
     line-height: 1.5;
   }
   .contact-today{
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 /* end of small screen */
@@ -559,9 +544,8 @@ to {margin-top:15%}
 a.padleft{
   font-size:12px;
 }
-.phone-email-container{
-  padding:0;
-}
+
+
   .contact-section{
     height:450px;
   }
