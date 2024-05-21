@@ -1,7 +1,9 @@
 body {
   font-family: 'Prata', serif;
 }
-
+svg{
+  border:none;
+}
 #intro{
   background-color: #05595B;
 }
@@ -122,6 +124,7 @@ body {
 
 .row{
   background-color: #05595B;
+  border:none;
 }
 .service-align{
   display:flex;
@@ -154,11 +157,6 @@ body {
   text-align: right;
 }
 
-hr {
-  border-color: #eeeeee;
-  border-width: 2px;
-  border-style: dashed none none;
-}
 
 /* Image GALLERY */
 .space-evenly-w-flex{
