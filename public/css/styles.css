@@ -8,6 +8,25 @@ section{
   margin: 0;
   padding: 0;
 }
+
+/* Seperate sections and remove problem lines by adding border top and bottom */
+
+.section-service-anim-wave{
+  border-style: solid; /* Sets the border style (e.g., solid, dashed) */
+   border-top-color: #05595B;  /* Maintains the top border color */
+   border-bottom-color: #F5F5F5; /* Maintains the bottom border color */
+   border-left-width: 0;   /* Removes left border */
+   border-right-width: 0;  /* Removes right border */
+}
+.section-modalImages-wave{
+  border-style: solid; /* Sets the border style (e.g., solid, dashed) */
+   border-top-color: #F5F5F5;  /* Maintains the top border color */
+   border-bottom-color: #E2D784; /* Maintains the bottom border color */
+   border-left-width: 0;   /* Removes left border */
+   border-right-width: 0;  /* Removes right border */
+}
+
+
 #intro{
   background-color: #05595B;
 }
