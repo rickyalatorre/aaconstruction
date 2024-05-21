@@ -1,8 +1,14 @@
 body {
-  background-color: #eeeeee;
   font-family: 'Prata', serif;
 }
 
+#intro{
+  background-color: #05595B;
+}
+
+.contact-about-body{
+  background-color: #eeeeee;
+}
 .green{
   color:green;
 }
@@ -35,12 +41,20 @@ body {
 }
 
  .color-padding-section {
-  display:flex;
+  /* display:flex;
   justify-content: space-evenly;
   background-color: #05595B;
   font-size: 50px;
   height:auto;
-  padding-top:30px;
+  padding-top:30px; */
+  display:block;
+  height:600px;
+  width: 100%;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/house-spray-cut.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /* Nav Bar */
@@ -77,12 +91,14 @@ body {
   display: inline-block;
 }
 
-.adrian-hero-shot{
-  object-position: right bottom;
+/* .adrian-hero-shot{
+  /* object-position: right bottom;
   width:50%;
   height:auto;
-  filter:brightness(90%) contrast(200%);
-}
+  filter:brightness(90%) contrast(200%); */
+ /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("house-spray-cut.PNG");
+ height:400px; */
+} */
 
 
 /* Services */
@@ -207,16 +223,17 @@ hr {
     padding-top:10px;
   }
 
-.adrian-hero-shot{
+/* .adrian-hero-shot{
   border-radius: 60% 5% 24% 5%;
-}
+} */
 
   .service-title{
     background-color: #05595B;
+    color: #E2D784;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    margin:0;
+    margin:20px;
   }
 
 .num-email{
@@ -297,11 +314,14 @@ footer {
 
 
 /* slogan big screen animation */
+
 .slog{
-  font-size:40px;
+  font-size:60px;
+  position: absolute;
+  top: 25%;
   text-align: left;
   color:#F5F5F5;
-  ;
+  z-index: 1;
 
 }
 .slog.active{
@@ -310,11 +330,25 @@ footer {
   animation-fill-mode: forwards;
 }
 
-@keyframes slogan{
+/* .slog{
+  font-size:40px;
+  text-align: left;
+  color:#F5F5F5;
+}
+.slog.active{
+  animation-name: slogan;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+} */
+
+/* @keyframes slogan{
 from {margin-top:0}
 to {margin-top:15%}
+} */
+@keyframes slogan{
+from {left:0;}
+to {left:25px;}
 }
-
 /* fade-in animation */
 
 .service-align.active{
@@ -397,6 +431,10 @@ to {margin-top:15%}
 
 @media only screen and (max-width: 700px) {
 
+  .color-padding-section {
+   display:block;
+   height:300px;
+}
   .email-sent{
     font-size:2.0rem;
   }
@@ -457,12 +495,12 @@ to {margin-top:15%}
   width:100%;
   padding:20px;
 }
-
+/*
 .adrian-hero-shot{
   height:auto;
   width:100%;
-  filter: brightness(50%);
-}
+  filter: brightness(45%);
+} */
 
   .navbar-brand {
     font-size: 0.95rem;
@@ -472,8 +510,10 @@ to {margin-top:15%}
     font-size: 1.2rem;
   }
 
-
-  .slog{
+.slog{
+  font-size:30px;
+}
+  /* .slog{
     font-size:30px;
     position: absolute;
     top: 50%;
@@ -486,18 +526,18 @@ to {margin-top:15%}
     animation-name: slogan;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-  }
+  } */
 
-  @keyframes slogan{
+  /* @keyframes slogan{
   from {left:0;}
   to {left:25px;}
-  }
+  } */
 
-  .color-padding-section {
+  /* .color-padding-section {
     position:relative;
     height:auto;
     padding:0;
-  }
+  } */
 
 .service-align{
   opacity:0;
