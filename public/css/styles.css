@@ -4,6 +4,10 @@ body {
 svg{
   border:none;
 }
+section{
+  margin: 0;
+  padding: 0;
+}
 #intro{
   background-color: #05595B;
 }
