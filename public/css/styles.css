@@ -4,36 +4,24 @@ body {
 svg{
   border:none;
 }
-section{
-  margin: 0;
-  padding: 0;
-}
-
-/* Seperate sections and remove problem lines by adding border top and bottom */
-
-.section-service-anim-wave{
-  border-style: solid; /* Sets the border style (e.g., solid, dashed) */
-   border-top-color: #05595B;  /* Maintains the top border color */
-   border-bottom-color: #F5F5F5; /* Maintains the bottom border color */
-   border-left-width: 0;   /* Removes left border */
-   border-right-width: 0;  /* Removes right border */
-}
-.section-modalImages-wave{
-  border-style: solid; /* Sets the border style (e.g., solid, dashed) */
-   border-top-color: #F5F5F5;  /* Maintains the top border color */
-   border-bottom-color: #E2D784; /* Maintains the bottom border color */
-   border-left-width: 0;   /* Removes left border */
-   border-right-width: 0;  /* Removes right border */
-}
+/* section{
+  padding: 10px;
+} */
 
 
-#intro{
+/* #intro{
   background-color: #05595B;
+} */
+
+
+.section-modalImages-wave{
+  background-color: #F5F5F5;
 }
 
 .contact-about-body{
   background-color: #eeeeee;
 }
+
 .green{
   color:green;
 }
@@ -134,7 +122,7 @@ section{
   color: #E2D784;
   font-size: 40px;
   font-weight: bold;
-  margin:0;
+  margin-bottom:0;
 }
 
 
@@ -254,7 +242,8 @@ section{
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    margin:20px;
+    padding:20px;
+    margin-bottom: 0;
   }
 
 .num-email{
