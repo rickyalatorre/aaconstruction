@@ -4,18 +4,10 @@ body {
 svg{
   border:none;
 }
-/* section{
-  padding: 10px;
-} */
-
-
-/* #intro{
-  background-color: #05595B;
-} */
-
 
 .section-modalImages-wave{
   background-color: #F5F5F5;
+  margin-bottom: -1px;
 }
 
 .contact-about-body{
@@ -54,12 +46,6 @@ svg{
 }
 
  .color-padding-section {
-  /* display:flex;
-  justify-content: space-evenly;
-  background-color: #05595B;
-  font-size: 50px;
-  height:auto;
-  padding-top:30px; */
   display:block;
   height:600px;
   width: 100%;
@@ -104,16 +90,6 @@ svg{
   display: inline-block;
 }
 
-/* .adrian-hero-shot{
-  /* object-position: right bottom;
-  width:50%;
-  height:auto;
-  filter:brightness(90%) contrast(200%); */
- /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("house-spray-cut.PNG");
- height:400px; */
-} */
-
-
 /* Services */
 .service-title{
   background-color: #05595B;
@@ -125,17 +101,17 @@ svg{
   margin-bottom:0;
 }
 
-
 .wave{
     background-color: #05595B;
     height:40px;
     position:relative;
 }
 
-
 .row{
   background-color: #05595B;
   border:none;
+  margin-left: 0;
+  margin-right:0;
 }
 .service-align{
   display:flex;
@@ -147,16 +123,17 @@ svg{
   color:#F5F5F5;
   }
 
-
 .contact-section{
   color:#062C30;
   font-family: 'Ubuntu Mono', monospace;
+  /* padding-top:10px; */
+  border:none;
+  margin-left: 0;
+  margin-right:0;
 }
-
 
 .contact-num-container{
   width:400px;
-  /* margin:0 auto; */
   padding-bottom: 30px;
 }
 .contact-drill{
@@ -175,12 +152,12 @@ svg{
   justify-content: space-evenly;
   background-color: #F5F5F5;
 }
-
+/*
 .row{
   margin-left: 0;
   margin-right:0;
 
-}
+} */
 
 .gallery-img{
   width:80%;
@@ -189,7 +166,6 @@ svg{
   }
 
 /* Contact */
-
 
 /* About Page  */
 .about-page-image{
@@ -232,9 +208,6 @@ svg{
     padding-top:10px;
   }
 
-/* .adrian-hero-shot{
-  border-radius: 60% 5% 24% 5%;
-} */
 
   .service-title{
     background-color: #05595B;
@@ -270,11 +243,10 @@ font-size: 100%;
 display:inline-block;
 }
 
-
 .contact-section{
   background-color: #E2D784;
   position:relative;
-  height:500px;
+  height:700px;
 }
 
 .text-center {
@@ -295,9 +267,9 @@ input {
   margin:0 auto;
 }
 
+
 .inBlock {
   display: inline-block;
-  /* padding: 15px; */
 }
 
 .padleft {
@@ -340,21 +312,7 @@ footer {
   animation-fill-mode: forwards;
 }
 
-/* .slog{
-  font-size:40px;
-  text-align: left;
-  color:#F5F5F5;
-}
-.slog.active{
-  animation-name: slogan;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-} */
 
-/* @keyframes slogan{
-from {margin-top:0}
-to {margin-top:15%}
-} */
 @keyframes slogan{
 from {left:0;}
 to {left:25px;}
@@ -487,9 +445,8 @@ to {left:25px;}
     font-weight: bold;
   }
 
-
   .contact-section{
-      height:400px;
+      height:600px;
   }
 
 
@@ -505,12 +462,6 @@ to {left:25px;}
   width:100%;
   padding:20px;
 }
-/*
-.adrian-hero-shot{
-  height:auto;
-  width:100%;
-  filter: brightness(45%);
-} */
 
   .navbar-brand {
     font-size: 0.95rem;
@@ -523,31 +474,13 @@ to {left:25px;}
 .slog{
   font-size:30px;
 }
-  /* .slog{
-    font-size:30px;
-    position: absolute;
-    top: 50%;
-    text-align: left;
-    color:#F5F5F5;
-    z-index: 1;
 
-  }
   .slog.active{
     animation-name: slogan;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-  } */
+  }
 
-  /* @keyframes slogan{
-  from {left:0;}
-  to {left:25px;}
-  } */
-
-  /* .color-padding-section {
-    position:relative;
-    height:auto;
-    padding:0;
-  } */
 
 .service-align{
   opacity:0;
@@ -597,7 +530,7 @@ a.padleft{
 
 
   .contact-section{
-    height:450px;
+    height:550px;
   }
   .navbar-toggler{
     font-size:0.9rem;
